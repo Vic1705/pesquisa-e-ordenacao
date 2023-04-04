@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+char opcao;
+
+int main()
+{
+  
+  int opcoesDeValores(int num1, int num2 , int num3);
+  printf("Os valores são: 15, 7 , 3.\n");
+  printf("* ENTRADA DE DADOS***\n");
+  printf(" a - Quero o menor valor da função\n");
+  printf(" b - Quero o maior valor da função\n");
+  printf(" c - Quero o valor médio da função\n");
+  printf("Selecione a opção desejada: ");
+  scanf("%c",&opcao);
+  
+  switch(opcao){
+      case 'a':
+      opcoesDeValores(15, 7, 3);
+      break;
+      case 'b':
+      opcoesDeValores(15, 7, 3);
+      case 'c':
+      opcoesDeValores(15, 7, 3);
+      break;
+      default:
+      printf("Opção Inválida!!!");
+      break;
+      
+  }
+  
+}
+
+int opcoesDeValores(int maior, int medio, int menor){
+    
+  if (opcao == 'a'){
+      printf("O numero menor é: %d",menor);
+      
+  }else if (opcao == 'b'){
+      printf("O maior número é: %d",maior);
+      
+  }else if (opcao == 'c'){
+      printf("O número medio é: %d",medio);
+  }else
+    printf("Digite uma opção válida!!!");
+    
+    return 0;
+}
